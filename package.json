@@ -1,10 +1,11 @@
 {
   "name": "react-sfc-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Quickly generate redistributable react sfc components",
-  "main": "index.js",
+  "bin": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "stdver": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -29,5 +30,8 @@
     "glob": "^7.1.4",
     "mri": "^1.1.4",
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "standard-version": "^7.0.0"
   }
 }
