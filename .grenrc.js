@@ -12,6 +12,7 @@ module.exports = {
   onlyMilestones: false,
   changelogFilename: 'CHANGELOG.md',
   template: {
+    commit: ({ message, url, author, name }) => `- [${message}](${url}) - ${author ? `@${author}` : name}`,
     issue: '- {{name}} [{{text}}]({{url}})',
     group: '\n### {{heading}}\n'
   },
