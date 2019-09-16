@@ -5,7 +5,8 @@
   "bin": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "stdver": "standard-version"
+    "stdver": "standard-version -m \"[skip ci] chore(release): v%\"",
+    "release": "gren release --override"
   },
   "repository": {
     "type": "git",

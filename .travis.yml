@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+- lts/*
+branches:
+  only:
+    - master
+git:
+  depth: 3
+install:
+- yarn --frozen-lockfile
+script:
+- ./build.sh
+after_success:
+- GREN_GITHUB_TOKEN=$GITHUB_TOKEN yarn release
+after_script:
+- ./notify.sh
+cache: yarn
+deploy:
+  on:
+    branch: master
+    # tags: true
+  provider: npm
+  email: lishijie519@dingtalk.com
+  api_key:
+    secure: NGLEtMFGAG6my+PXhrhNqsjQa/QKm4fnbf+OU1WSWv+DQeyyOuVPXqLxvqnlbvAodO27eP9IPsJHeTv9bEc7Uja1j5R7EA5MXQFYQ3ZG3a1glY6wfJMIMfehHp0wpnlAWXNip7dxF766I+BgSJpVZZvFbNdymhBYxY9IaHyd4IbDajnciInmMa7n8eooh4XIMfQAHfS53/n1q0auWZ97WKAmj3dVCFhwBhzVJjKeUsqFH1aT2fQuLwDKSzAQU4HvrEFL+K+6L1dNrwiQBVcR7sSUdq9oaTfB4rZqbAH1N3DotNO36AxORIRdDqHmWZrzpVdi3yKPL78X6FX8w5zNlWC7C3IO8MKcnZ6qKkk66WvVYMrStukb6MemTjt1cmtF2YgV6VKYhiDfaaHchXPry2+uB51EPXzyeMK9+pxsoDmTkihIVnAVJpQD0eNT0t0LC+c0gw2XYalvQrj0edZHY00s3cNLcZpgGU/JstbS0LNjYGmMylXnJGmgFujlG8gCAMxVxMixF1QMd8i9I9LPw7Z3A58S3Jb/0Kn2h8ThFtyke2AAPimCwSSroflGMd6BPvE/jVBIk1hF/FeRZv/FOPV2+SwJkh0OrzJoN0oXI57NlBl5a1KBGc3GyswD68HUnO4dsqIQv32Z4IaIOrMgGz/QPSkQtj0lM8bxhlYUNqM=

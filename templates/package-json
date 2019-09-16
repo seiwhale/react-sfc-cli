@@ -9,7 +9,7 @@
     "url": "https://github.com/{{ownerName}}/{{componentName}}.git"
   },
   "keywords": [
-    "vue",
+    "react",
     "sfc",
     "component"
   ],
