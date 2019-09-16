@@ -1,5 +1,5 @@
 #!/bin/sh
-tarn stdver
+yarn stdver
 
 yarn test
 
