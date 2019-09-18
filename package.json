@@ -1,6 +1,6 @@
 {
   "name": "react-sfc-cli",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Quickly generate redistributable react sfc components",
   "bin": "index.js",
   "scripts": {
