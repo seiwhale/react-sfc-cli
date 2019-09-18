@@ -1,11 +1,11 @@
 {
   "name": "react-sfc-cli",
-  "version": "0.0.5",
+  "version": "0.0.4",
   "description": "Quickly generate redistributable react sfc components",
   "bin": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "stdver": "standard-version -m \"[skip ci] chore(release): v%\"",
+    "stdver": "standard-version -m '[skip ci] chore(release): v%s'",
     "release": "gren release --override"
   },
   "repository": {
