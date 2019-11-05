@@ -4,6 +4,6 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### 0.0.4 (2019-09-19)
 
-### [0.0.3](https://github.com/LishiJ/react-sfc-cli/compare/v0.0.2...v0.0.3) (2019-09-19)
+### [0.0.3](https://github.com/seiwhale/react-sfc-cli/compare/v0.0.2...v0.0.3) (2019-09-19)
 
-### [0.0.2](https://github.com/LishiJ/react-sfc-cli/compare/v0.0.5...v0.0.2) (2019-09-18)
+### [0.0.2](https://github.com/seiwhale/react-sfc-cli/compare/v0.0.5...v0.0.2) (2019-09-18)

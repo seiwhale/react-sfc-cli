@@ -5,7 +5,7 @@ then
   exit 1
 fi
 
-url=https://api.github.com/repos/LishiJ/react-sfc-cli/releases/latest
+url=https://api.github.com/repos/seiwhale/react-sfc-cli/releases/latest
 resp_tmp_file=resp.tmp
 
 curl -H "Authorization: token $GITHUB_TOKEN" $url > $resp_tmp_file
