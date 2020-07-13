@@ -33,6 +33,6 @@
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
-    "standard-version": "^7.0.0"
+    "standard-version": "^8.0.1"
   }
 }
